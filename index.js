@@ -15,11 +15,27 @@ function wrapAdjective (ne= '*') {
 }
 
 let Calculator = {
-  add: function add(a,b){
-  return a+b
+
+  add: function(a,b) {
+    return a + b;
+  },
+  subtract: function(a,b) {
+    return a - b
+  },
+  multiply: function(a,b) {
+    return a * b
+  },
+  divide: function(a,b) {
+    return a / b;
   }
-  
-  subtract: function subtract(a,b){
-  return a-b
+
+}
+
+
+function actionApplyer(i, arr){
+ let  start = i
+  for ( let i = 0; i < arr.length;i ++){
+    start = ray[i](start)
   }
+  return start
 }
