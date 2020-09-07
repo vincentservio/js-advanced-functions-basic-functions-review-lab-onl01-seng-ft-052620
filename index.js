@@ -35,7 +35,7 @@ let Calculator = {
 function actionApplyer(i, arr){
  let  start = i
   for ( let i = 0; i < arr.length;i ++){
-    start = ray[i](start)
+    start = arr[i](start)
   }
   return start
 }
